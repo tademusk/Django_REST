@@ -83,7 +83,7 @@ django-admin startproject drf_course backend
 copy env.template .env
 
 #mac/linux
-cp env.template .env
+cp env.template .env 
 ```
 
 You can use your new .env file to store API keys, secret_keys, app_passwords and you will gain access to these in the Django app.

@@ -64,7 +64,7 @@ imports: Replace the current import section with the following snippet of code. 
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-load_dotenv()
+load_dotenv() 
 ```
 
 variables: Replace ALLOWED_HOSTS, SECRET_KEY and DEBUG with the following snippet.
