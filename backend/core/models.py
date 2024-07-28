@@ -1,3 +1,22 @@
 from django.db import models
+from utils.model_abstracts import Model # type: ignore
+from django_extensions.db.models import ( # type: ignore
+	TimeStampedModel, 
+	ActivatorModel,
+	TitleDescriptionModel
+)
 
-# Create your models here.
+class Contact(
+	TimeStampedModel, 
+	ActivatorModel,
+	TitleDescriptionModel,
+	Model
+	):
+
+	class Meta:
+		verbose_name_plural = "Contacts" 
+
+	email = models.EmailField(verbose_name="Email")
+
+	def __str__(self):
+		return f'{self.title}'

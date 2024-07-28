@@ -89,7 +89,7 @@ class Contact(
 	email = models.EmailField(verbose_name="Email")
 
 	def __str__(self):
-		return f'{self.title}'
+		return f'{self.title}' 
 ```
 
 2) Abstract models - You will notice that we are importing and using a few abstract models. Some are straight out of the box from django-extensions. However, I have my own that I like to use that uses a UUID instead of the default ID field. 
